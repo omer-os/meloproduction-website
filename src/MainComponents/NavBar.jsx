@@ -10,28 +10,38 @@ export default function NavBar() {
   return (
     <>
       <div className="flex justify-between md:py-3 sticky top-0 left-0 z-50 md:px-9 px-6 py-4 items-center">
-        <div className="flex md:text-xl z-50 flex-1 font-bold">{t("logo")}</div>
+        <Link href="/">
+          <div className="flex cursor-pointer md:text-xl z-50 flex-1 font-bold">
+            {t("logo")}
+          </div>
+        </Link>
 
         <div className="hidden md:flex text-gray-600 text-base capitalize justify-between gap-6 bg-red">
           <Link href="/">
-            <div onClick={() => setOpen(!Open)}>{t("home")}</div>
+            <div className="cursor-pointer" onClick={() => setOpen(!Open)}>
+              {t("home")}
+            </div>
           </Link>
           <Link href="/about">
-            <div onClick={() => setOpen(!Open)}>{t("about")}</div>
+            <div className="cursor-pointer" onClick={() => setOpen(!Open)}>
+              {t("about")}
+            </div>
           </Link>
           <Link href="/services">
-            <div onClick={() => setOpen(!Open)}>{t("services")}</div>
+            <div className="cursor-pointer" onClick={() => setOpen(!Open)}>
+              {t("services")}
+            </div>
           </Link>
         </div>
 
         <div className="hidden md:flex justify-end flex-1">
-          <div className="capitalize w-max bg-blue-600 text-white py-2 px-5 rounded md:font-bold">
+          <div className="capitalize cursor-pointer w-max bg-blue-600 text-white py-2 px-5 rounded md:font-bold">
             {t("btn")}
           </div>
         </div>
 
         <div
-          className="flex-col gap-1 z-50 md:hidden flex"
+          className="flex-col cursor-pointer gap-1 z-50 md:hidden flex"
           onClick={() => {
             setOpen(!Open);
           }}
@@ -56,21 +66,27 @@ export default function NavBar() {
         <div
           className={`
         ${Open ? "left-0" : "-left-[100%]"}
-        responsive transition-all duration-150 text-xl font-bold capitalize gap-7 ease-in-out flex flex-col md:hidden  items-center bg-white justify-center z-40 top-0 left-0 h-screen w-full fixed`}
+        responsive transition-all duration-150 text-xl font-bold capitalize gap-7 ease-in-out flex flex-col md:hidden  items-center bg-white justify-center z-40 top-0 text-[#535353] left-0 h-screen w-full fixed`}
         >
           <Link href="/">
-            <div onClick={() => setOpen(!Open)}>{t("home")}</div>
+            <div className="cursor-pointer" onClick={() => setOpen(!Open)}>
+              {t("home")}
+            </div>
           </Link>
           <Link href="/about">
-            <div onClick={() => setOpen(!Open)}>{t("about")}</div>
+            <div className="cursor-pointer" onClick={() => setOpen(!Open)}>
+              {t("about")}
+            </div>
           </Link>
           <Link href="/services">
-            <div onClick={() => setOpen(!Open)}>{t("services")}</div>
+            <div className="cursor-pointer" onClick={() => setOpen(!Open)}>
+              {t("services")}
+            </div>
           </Link>
           <Link href="/contact-us">
             <div
               onClick={() => setOpen(!Open)}
-              className="text-center capitalize font-bold flex flex-col gap-8"
+              className="text-center cursor-pointer capitalize font-bold flex flex-col gap-8"
             >
               <div className="capitalize w-max bg-blue-600 text-white py-2 px-4 rounded md:font-bold">
                 {t("btn")}
