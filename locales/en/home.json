@@ -1,0 +1,47 @@
+{
+  "title": "We inspire brands and people to grow and develop.",
+  "about": "We are composed of cross-skilled individuals that focus on growing your brand.",
+  "btn-1": "hire us",
+  "btn-2": "our services",
+  "services": "Our Services",
+  "services-1": "They are comprised of must-to-have technical and social skills that will be invested into the growth of your own brand, from zero to hero.",
+
+  "services-boxes": [
+    {
+      "title": "Social Media Management",
+      "description": "This service aims to leverage the use social media to create an engaging online presence for your brand."
+    },
+    {
+      "title": "Videos & Motion Graphic",
+      "description": "Take a Creative direction through our experience with filming and directorship."
+    },
+    {
+      "title": "Graphic Design",
+      "description": "Creating visual content that appeals to your audience in a way that aligns with your brand goals and identity."
+    },
+    {
+      "title": "Meta & Google Ads",
+      "description": "Essential to establish your presence both online and offline, using specialized approach to meet goals and budget demands."
+    },
+    {
+      "title": "Brand Identity",
+      "description": "Your brand speaks to people about your product, so it is essential to have an identity that people can associate with."
+    },
+    {
+      "title": "Marketing Analysis",
+      "description": "We help you make better decision, based on our method of historical data analysis and future projections."
+    },
+    {
+      "title": "Web Development",
+      "description": "Software development is the process of conceiving, specifying, designing, other software components."
+    },
+    {
+      "title": "Modeling Photography",
+      "description": "Whether you are an influencer; a public figure, or a model, our photography sessions can bring out the best of you."
+    },
+    {
+      "title": "Customer Management",
+      "description": "Moody and unpredictble, growing a customer base and maintaining it can be a very difficult task, however, we make it easier for you to do so."
+    }
+  ]
+}
