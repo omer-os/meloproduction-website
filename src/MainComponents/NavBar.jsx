@@ -9,7 +9,7 @@ export default function NavBar() {
   const { t, lang } = useTranslation("navbar");
   return (
     <>
-      <div className="flex justify-between md:py-3 sticky top-0 left-0 z-50 md:px-9 px-6 py-4 items-center">
+      <div className="flex bg-white justify-between md:py-3 sticky top-0 left-0 z-50 md:px-9 px-6 py-4 items-center">
         <Link href="/">
           <div className="flex cursor-pointer md:text-xl z-50 flex-1 font-bold">
             {t("logo")}
