@@ -1,10 +1,9 @@
 import React from "react";
-import useTranslation from 'next-translate/useTranslation'
-
+import useTranslation from "next-translate/useTranslation";
 
 export default function index() {
-  const { t, lang } = useTranslation('common')
-  const title = t('title')
+  const { t, lang } = useTranslation("common");
+  const title = t("title");
 
-  return <div className="underline">{title}</div>;
+  return <div className="">{title}</div>;
 }
