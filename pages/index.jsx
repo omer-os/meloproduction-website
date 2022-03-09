@@ -18,6 +18,7 @@ import socialIcon from "../public/imgs/socialIcon.webP";
 import Head from "next/head";
 import WhoWeAreComponent from "../src/components/WhoWeAreComponent";
 import WhyPeopleChooseUs from "../src/components/WhyPeopleChooseUs";
+import OurWorkSection from "../src/components/OurWorkSection";
 
 export default function index() {
   const { t, lang } = useTranslation("home");
@@ -99,12 +100,10 @@ export default function index() {
           imageAlt={t("services-boxes.6.title")}
           Icon={customerIcon}
         />
-
-
-
       </div>
-        <WhoWeAreComponent lang={lang} t={t}/>
-        <WhyPeopleChooseUs lang={lang} t={t}/>
+      <WhoWeAreComponent lang={lang} t={t} />
+      <WhyPeopleChooseUs lang={lang} t={t} />
+      <OurWorkSection />
     </>
   );
 }
