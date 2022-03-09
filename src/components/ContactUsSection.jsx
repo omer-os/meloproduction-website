@@ -8,26 +8,29 @@ import youtube from "../../public/imgs/icons/youtube.svg";
 import phoneIcon from "/public/imgs/icons/phone-icon.svg";
 import mailIcon from "/public/imgs/icons/mail-icon.svg";
 import locationIcon from "/public/imgs/icons/location-icon.svg";
+import useTranslation from "next-translate/useTranslation";
 
 export default function ContactUsSection() {
+  const { t, lang } = useTranslation("home");
+
   return (
     <div className="flex flex-col gap-3 justify-center text-center my-[3em]">
-      <div className="text-2xl font-bold">Contact Us for more Details</div>
+      <div className="text-2xl font-bold">{t("contact-us-section.title")}</div>
       <div className="flex justify-center text-xl">
         <div className="img w-[1em]">
-          <Image src={locationIcon} layout="responsive" />
+          <Image src={locationIcon} alt="location icon" layout="responsive" />
         </div>
         Kornish St. Kirkuk, Iraq
       </div>
       <div className="flex justify-center text-xl">
         <div className="img w-[1em]">
-          <Image src={mailIcon} layout="responsive" />
+          <Image src={mailIcon} alt="mail icon" layout="responsive" />
         </div>
         info@meloproduction.me
       </div>
       <div className="flex justify-center text-xl">
         <div className="img w-[1em]">
-          <Image src={phoneIcon} layout="responsive" />
+          <Image src={phoneIcon} alt="phone icon" layout="responsive" />
         </div>
         +964-770-580-3570
       </div>

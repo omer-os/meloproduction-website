@@ -11,18 +11,21 @@ import clinet7 from "../../public/imgs/clinets/clinet-logo-7.png";
 import clinet8 from "../../public/imgs/clinets/clinet-logo-8.png";
 import clinet9 from "../../public/imgs/clinets/clinet-logo-9.png";
 import clinet10 from "../../public/imgs/clinets/clinet-logo-10.png";
+import useTranslation from "next-translate/useTranslation";
 
 export default function OurClintes() {
   const [Width, setWidth] = useState(0);
   const coursel = useRef();
-
+  const { t, lang } = useTranslation("home");
   useEffect(() => {
     setWidth(coursel.current.scrollWidth - coursel.current.offsetWidth);
   }, []);
 
   return (
     <div className="my-[2em] flex flex-col">
-      <h1 className="text-2xl mx-auto font-bold my-3">Our Clintes</h1>
+      <h1 className="text-2xl mx-auto font-bold my-3">
+        {t("our-clinets.title")}
+      </h1>
 
       <div className="w-4/6 rounded-xl p-4 mx-auto flex overflow-x-hidden justify-center">
         <motion.div
