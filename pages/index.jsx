@@ -17,6 +17,7 @@ import customerIcon from "../public/imgs/customerIcon.webP";
 import socialIcon from "../public/imgs/socialIcon.webP";
 import Head from "next/head";
 import WhoWeAreComponent from "../src/components/WhoWeAreComponent";
+import WhyPeopleChooseUs from "../src/components/WhyPeopleChooseUs";
 
 export default function index() {
   const { t, lang } = useTranslation("home");
@@ -102,7 +103,8 @@ export default function index() {
 
 
       </div>
-        <WhoWeAreComponent />
+        <WhoWeAreComponent lang={lang} t={t}/>
+        <WhyPeopleChooseUs lang={lang} t={t}/>
     </>
   );
 }
