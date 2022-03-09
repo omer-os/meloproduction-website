@@ -5,7 +5,6 @@ import React from "react";
 import useTranslation from "next-translate/useTranslation";
 import homeSvg from "../public/imgs/home-person-svg.svg";
 import Hr from "../src/components/Hr";
-
 import graphicIcon from "../public/imgs/graphicIcon.webP";
 import videosIcon from "../public/imgs/videosIcon.webP";
 import metaIcon from "../public/imgs/metaIcon.webP";
@@ -19,6 +18,9 @@ import Head from "next/head";
 import WhoWeAreComponent from "../src/components/WhoWeAreComponent";
 import WhyPeopleChooseUs from "../src/components/WhyPeopleChooseUs";
 import OurWorkSection from "../src/components/OurWorkSection";
+import OurClintes from "../src/components/OurClintes";
+import BGrothSection from "../src/components/BGrothSection";
+import ContactUsSection from "../src/components/ContactUsSection";
 
 export default function index() {
   const { t, lang } = useTranslation("home");
@@ -104,6 +106,11 @@ export default function index() {
       <WhoWeAreComponent lang={lang} t={t} />
       <WhyPeopleChooseUs lang={lang} t={t} />
       <OurWorkSection />
+      <Hr />
+
+      <OurClintes />
+      <BGrothSection />
+      <ContactUsSection/>
     </>
   );
 }
