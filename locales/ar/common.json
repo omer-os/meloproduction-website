@@ -1,0 +1,35 @@
+{
+  "logo": "Melo Productions",
+  "home": "الرئيسية",
+  "about": "عنا",
+  "services": "خدماتنا",
+  "btn": "اتصل بنا",
+
+  "footer": {
+    "about": {
+      "title": "Melo Production",
+      "body": "نحن فريق متعدد الوظائف ، ماهرون في المجالات التي تشمل إنتاج وتسويق المحتوى الرقمي المرئي وغير الرقمي."
+    },
+    "information": {
+      "title": "معلومات",
+      "about-us": "عنا",
+      "clients": "عملائنا",
+      "services": "خدماتنا",
+      "projects": "اعمالنا"
+    },
+    "contact-us": {
+      "title": "اتصل بنا",
+      "location": "عراق - كركوك شارع الكورنيش",
+      "email": "info@meloproduction.me",
+      "phone": "+964-770-580-3570"
+    },
+    "language": {
+      "title": "اللغة",
+      "arabic": "عربي",
+      "english": "انكليزي"
+    },
+    "follow-us": "تابعنا عبر",
+    "btn": "اعمل معنا",
+    "copyright": "Copyright © 2022 Melo Production."
+  }
+}

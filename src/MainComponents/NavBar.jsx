@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import useTranslation from "next-translate/useTranslation";
-import { logo1 } from "../../public/imgs/logo1.jpg";
 import Link from "next/link";
 import BlueButton from "../Buttons/BlueButton";
 export default function NavBar() {
   const [Open, setOpen] = useState(false);
 
-  const { t, lang } = useTranslation("navbar");
+  const { t, lang } = useTranslation("common");
   return (
     <>
       <div className="flex shadow-md bg-white justify-between md:py-3 sticky top-0 left-0 z-50 md:px-9 px-6 py-4 items-center">
@@ -18,19 +17,19 @@ export default function NavBar() {
 
         <div className="hidden md:flex text-gray-600 text-base capitalize justify-between gap-6 bg-red">
           <Link href="/">
-            <div className="cursor-pointer" onClick={() => setOpen(!Open)}>
+            <a className="cursor-pointer hover:text-blue-600 transition-all duration-75" onClick={() => setOpen(!Open)}>
               {t("home")}
-            </div>
+            </a>
           </Link>
           <Link href="/about">
-            <div className="cursor-pointer" onClick={() => setOpen(!Open)}>
+            <a className="cursor-pointer hover:text-blue-600 transition-all duration-75" onClick={() => setOpen(!Open)}>
               {t("about")}
-            </div>
+            </a>
           </Link>
           <Link href="/services">
-            <div className="cursor-pointer" onClick={() => setOpen(!Open)}>
+            <a className="cursor-pointer hover:text-blue-600 transition-all duration-75" onClick={() => setOpen(!Open)}>
               {t("services")}
-            </div>
+            </a>
           </Link>
         </div>
 

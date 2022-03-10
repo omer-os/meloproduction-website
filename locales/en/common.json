@@ -1,0 +1,35 @@
+{
+  "logo": "Melo Productions",
+  "home": "home",
+  "about": "about",
+  "services": "services",
+  "btn": "contact us",
+
+  "footer": {
+    "about": {
+      "title": "Melo Production",
+      "body": "We are a cross-functional team, skilled in fields involving the production and marketing of visual digital and non-digital content."
+    },
+    "information": {
+      "title": "Information",
+      "about-us": "About Us",
+      "clients": "Our Clinets",
+      "services": "Our Services",
+      "projects": "Our Projects"
+    },
+    "contact-us": {
+      "title":"Contact US",
+      "location": "Kornish St. Kirkuk, Iraq",
+      "email": "info@meloproduction.me",
+      "phone": "+964-770-580-3570"
+    },
+    "language": {
+      "title": "language",
+      "arabic": "arabic",
+      "english": "english"
+    },
+    "follow-us":"Follow Us",
+    "btn": "Hire Us",
+    "copyright":"Copyright © 2022 Melo Production."
+  }
+}
