@@ -1,5 +1,8 @@
 import React from "react";
-export function ServicesSecTitle({ t }) {
+import useTranslation from "next-translate/useTranslation";
+export function ServicesSecTitle() {
+  const { t } = useTranslation("home");
+
   return (
     <>
       <div className="text-3xl text-center font-bold pt-[40px]">

@@ -3,7 +3,7 @@ import bgImg from "../../public/imgs/bg-pcs-img.jpg";
 import Link from "next/link";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
-import RedButton from "./RedButton";
+import RedButton from "../Buttons/RedButton";
 export default function BGrothSection() {
   const { t, lang } = useTranslation("home");
   return (
@@ -16,8 +16,11 @@ export default function BGrothSection() {
       <div className="text-lg mx-4 lg:max-w-[30em] z-20">
         {t("Business-Growth-Section.description")}
       </div>
+
+
+
       <Link href="/services">
-        <a>
+        <a className="mx-auto z-20 w-max">
           <RedButton text={t("Business-Growth-Section.btn")} reversed />
         </a>
       </Link>

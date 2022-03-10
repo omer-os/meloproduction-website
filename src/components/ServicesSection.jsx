@@ -10,8 +10,10 @@ import webdevIcon from "../../public/imgs/webdevIcon.webP";
 import customerIcon from "../../public/imgs/customerIcon.webP";
 import socialIcon from "../../public/imgs/socialIcon.webP";
 
+import useTranslation from "next-translate/useTranslation";
 
-function ServicesSection({t}) {
+function ServicesSection() {
+  const { t } = useTranslation("home");
   return (
     <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-[35px] gap-[20px] p-[30px] lg:px-[5em]">
       <ServicesBox
@@ -79,8 +81,5 @@ function ServicesSection({t}) {
     </div>
   );
 }
-
-
-
 
 export default ServicesSection;

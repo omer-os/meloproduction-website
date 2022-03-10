@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
-import BlueButton from "../components/BlueButton";
+import BlueButton from "../Buttons/BlueButton";
+import homeSvg from "../../public/imgs/home-person-svg.svg";
 
-export function Sec1({ homeSvg }) {
+export function Sec1() {
   const { t, lang } = useTranslation("home");
 
   return (
@@ -28,8 +29,8 @@ export function Sec1({ homeSvg }) {
         </h2>
 
         <div className="flex capitalize ssm:justify-start justify-center gap-3">
-          <BlueButton text={t("btn-1")}/>
-          <BlueButton text={t("btn-2")}/>
+          <BlueButton text={t("btn-1")} link="/hire-us" />
+          <BlueButton text={t("btn-2")} link="/services"/>
         </div>
       </div>
 

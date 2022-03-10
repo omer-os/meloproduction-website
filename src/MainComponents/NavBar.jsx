@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import useTranslation from "next-translate/useTranslation";
 import { logo1 } from "../../public/imgs/logo1.jpg";
 import Link from "next/link";
-import BlueButton from "../components/BlueButton";
+import BlueButton from "../Buttons/BlueButton";
 export default function NavBar() {
   const [Open, setOpen] = useState(false);
 
@@ -35,7 +35,7 @@ export default function NavBar() {
         </div>
 
         <div className="hidden md:flex justify-end flex-1">
-          <BlueButton text={t("btn")} />
+          <BlueButton text={t("btn")} link="/contact-us" />
         </div>
 
         <div

@@ -2,7 +2,6 @@ import { ServicesSecTitle } from "../src/components/ServicesSecTitle";
 import { Sec1 } from "../src/MainComponents/Sec1";
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
-import homeSvg from "../public/imgs/home-person-svg.svg";
 import Hr from "../src/components/Hr";
 import Head from "next/head";
 import WhoWeAreComponent from "../src/components/WhoWeAreComponent";
@@ -18,7 +17,7 @@ const OurWorkSection = dynamic(() =>
   import("../src/components/OurWorkSection")
 );
 
-export default function index() {
+export default function Index() {
   const { t, lang } = useTranslation("home");
 
   const { observe, inView } = useInView({
@@ -35,22 +34,20 @@ export default function index() {
         />
       </Head>
 
-      <Sec1 homeSvg={homeSvg} />
-
+      <Sec1 />
       <Hr />
-
-      <ServicesSecTitle t={t} />
-
-      <ServicesSection t={t} />
+      <ServicesSecTitle />
+      <ServicesSection />
       <WhoWeAreComponent />
       <WhyPeopleChooseUs />
+
+      {/* load it when needed */}
       <div ref={observe}>{inView && <OurWorkSection />}</div>
+
       <Hr />
 
       <OurClintes />
-
       <BGrothSection />
-
       <ContactUsSection />
     </>
   );

@@ -11,10 +11,11 @@ import EnishtainCafeKirkuk from "../../public/imgs/projects/enishtain-cafe-kirku
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
 import WorkBox from "./WorkBox";
-import RedButton from "./RedButton";
+import RedButton from "../Buttons/RedButton";
 
 export default function OurWorkSection() {
   const { t, lang } = useTranslation("home");
+
   const worksList = [
     {
       id: 1,
@@ -72,6 +73,7 @@ export default function OurWorkSection() {
     },
   ];
 
+  
   return (
     <div className="flex flex-col py-5 w-full">
       <h1 className="text-2xl text-center font-bold">{t("our-work.title")}</h1>
@@ -87,10 +89,11 @@ export default function OurWorkSection() {
       </div>
 
       <Link href="/projects">
-        <a>
+        <a className="w-max mx-auto">
           <RedButton text={t("our-work.btn")} />
         </a>
       </Link>
     </div>
   );
 }
+
