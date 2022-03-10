@@ -37,18 +37,26 @@ export default function ContactUsSection() {
         <Image src={phoneIcon} alt="phone icon" width={15} height={15} />
         +964-770-580-3570
       </div>
-      {/*  */}
       <div className="flex justify-center gap-3">
-        <a className="w-[1.09em]">
+        <a
+          href="https://instagram.com/meloproduction.me"
+          className="w-[1.09em]"
+        >
           <Image src={insta} alt="instagram" layout="responsive" />
         </a>
-        <a className="w-[1.4em]">
+        <a
+          href="https://www.youtube.com/channel/UCKI6WkBDez7ER_0CvZ3xp7A"
+          className="w-[1.4em]"
+        >
           <Image src={youtube} alt="youtube" layout="responsive" />
         </a>
-        <a className="w-[.98em]">
+        <a
+          href="https://www.linkedin.com/company/melo-production-me"
+          className="w-[.98em]"
+        >
           <Image src={linkdin} alt="linkedin" layout="responsive" />
         </a>
-        <a className="w-[.5em]">
+        <a href="https://facebook.com/MeloPrduction" className="w-[.5em]">
           <Image src={facebook} alt="facebook" layout="responsive" />
         </a>
       </div>
