@@ -1,10 +1,12 @@
 import React from "react";
 import { ServicesBox } from "./ServicesBox";
-import graphicIcon from "../../public/imgs/graphicIcon.webP";
-import videosIcon from "../../public/imgs/videosIcon.webP";
-import metaIcon from "../../public/imgs/metaIcon.webP";
-import brandIcon from "../../public/imgs/brandIcon.webP";
-import modelingIcon from "../../public/imgs/modelingIcon.webP";
+
+import graphicIcon from "../../public/imgs/graphiIcon.webP";
+import videosIcon from "../../public/imgs/vidsIcon.webP";
+import metaIcon from "../../public/imgs/mtaIcon.webP";
+import brandIcon from "../../public/imgs/brndIcon.webP";
+import modelingIcon from "../../public/imgs/modlingIcon.webP";
+
 import dataIcon from "../../public/imgs/dataIcon.webP";
 import webdevIcon from "../../public/imgs/webdevIcon.webP";
 import customerIcon from "../../public/imgs/customerIcon.webP";

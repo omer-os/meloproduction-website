@@ -73,7 +73,6 @@ export default function OurWorkSection() {
     },
   ];
 
-  
   return (
     <div className="flex flex-col py-5 w-full">
       <h1 className="text-2xl text-center font-bold">{t("our-work.title")}</h1>
@@ -96,4 +95,3 @@ export default function OurWorkSection() {
     </div>
   );
 }
-
