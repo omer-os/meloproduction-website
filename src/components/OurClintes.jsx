@@ -27,7 +27,9 @@ export default function OurClintes() {
         {t("our-clinets.title")}
       </h1>
 
-      <div className="w-4/6 rounded-xl p-4 mx-auto flex overflow-x-hidden justify-center">
+      <div className="sm:w-4/6 
+      w-11/12
+      rounded-xl p-4 mx-auto flex overflow-x-hidden justify-center">
         <motion.div
           whileTap={{ cursor: "grabbing" }}
           ref={coursel}
@@ -36,7 +38,7 @@ export default function OurClintes() {
             right: 0,
             left: -Width,
           }}
-          className="flex cursor-grab w-full gap-4 px-2 py-2"
+          className="flex cursor-grab w-full gap-4 sm:px-2 py-2"
         >
           <ClinetBox alt="raji logo" img={clinet1} />
           <ClinetBox alt="valvoline logo" img={clinet2} />

@@ -3,6 +3,7 @@ import bgImg from "../../public/imgs/bg-pcs-img.jpg";
 import Link from "next/link";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
+import RedButton from "./RedButton";
 export default function BGrothSection() {
   const { t, lang } = useTranslation("home");
   return (
@@ -16,9 +17,9 @@ export default function BGrothSection() {
         {t("Business-Growth-Section.description")}
       </div>
       <Link href="/services">
-        <button className="bg-white font-bold z-20 py-2 px-3 text-[#A72D2D] text-bold text-xl">
-          {t("Business-Growth-Section.btn")}
-        </button>
+        <a>
+          <RedButton text={t("Business-Growth-Section.btn")} reversed />
+        </a>
       </Link>
     </div>
   );

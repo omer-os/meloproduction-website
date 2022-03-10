@@ -4,7 +4,7 @@ import insta from "../../public/imgs/icons/insta.svg";
 import facebook from "../../public/imgs/icons/facebook.svg";
 import linkdin from "../../public/imgs/icons/linkdin.svg";
 import youtube from "../../public/imgs/icons/youtube.svg";
-
+import Link from "next/link";
 import phoneIcon from "/public/imgs/icons/phone-icon.svg";
 import mailIcon from "/public/imgs/icons/mail-icon.svg";
 import locationIcon from "/public/imgs/icons/location-icon.svg";
@@ -16,25 +16,28 @@ export default function ContactUsSection() {
   return (
     <div className="flex flex-col gap-3 justify-center text-center my-[3em]">
       <div className="text-2xl font-bold">{t("contact-us-section.title")}</div>
-      <div className="flex justify-center text-xl">
-        <div className="img w-[1em]">
-          <Image src={locationIcon} alt="location icon" layout="responsive" />
+
+      <Link href="https://goo.gl/maps/m2DBWByGsFYZhr6BA">
+        <div className="flex hover:underline cursor-pointer justify-center gap-2 text-xl">
+          <Image
+            src={locationIcon}
+            alt="location icon"
+            width={15}
+            height={15}
+          />
+          Kornish St. Kirkuk, Iraq
         </div>
-        Kornish St. Kirkuk, Iraq
-      </div>
-      <div className="flex justify-center text-xl">
-        <div className="img w-[1em]">
-          <Image src={mailIcon} alt="mail icon" layout="responsive" />
-        </div>
+      </Link>
+
+      <div className="flex hover:underline cursor-pointer justify-center gap-2 text-xl">
+        <Image src={mailIcon} alt="mail icon" width={20} height={15} />
         info@meloproduction.me
       </div>
-      <div className="flex justify-center text-xl">
-        <div className="img w-[1em]">
-          <Image src={phoneIcon} alt="phone icon" layout="responsive" />
-        </div>
+      <div className="flex hover:underline cursor-pointer justify-center gap-2 text-xl">
+        <Image src={phoneIcon} alt="phone icon" width={15} height={15} />
         +964-770-580-3570
       </div>
-
+      {/*  */}
       <div className="flex justify-center gap-3">
         <a className="w-[1.09em]">
           <Image src={insta} alt="instagram" layout="responsive" />

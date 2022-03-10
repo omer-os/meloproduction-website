@@ -1,5 +1,6 @@
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
+import WhiteButton from "./WhiteButton";
 
 export default function WhoWeAreComponent() {
   const { t, lang } = useTranslation("home");
@@ -14,9 +15,7 @@ export default function WhoWeAreComponent() {
       >
         {t("who-we-are.description")}
       </p>
-      <button className="bg-white text-blue-600 border-2 border-blue-400 py-1 px-3 rounded text-lg">
-        {t("who-we-are.btn")}
-      </button>
+      <WhiteButton text={t("who-we-are.btn")}/>
     </div>
   );
 }

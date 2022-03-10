@@ -11,6 +11,7 @@ import EnishtainCafeKirkuk from "../../public/imgs/projects/enishtain-cafe-kirku
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
 import WorkBox from "./WorkBox";
+import RedButton from "./RedButton";
 
 export default function OurWorkSection() {
   const { t, lang } = useTranslation("home");
@@ -86,9 +87,9 @@ export default function OurWorkSection() {
       </div>
 
       <Link href="/projects">
-        <button className="text-white my-3 py-2 px-6 font-bold bg-red-800 w-max rounded mx-auto">
-          {t("our-work.btn")}
-        </button>
+        <a>
+          <RedButton text={t("our-work.btn")} />
+        </a>
       </Link>
     </div>
   );
