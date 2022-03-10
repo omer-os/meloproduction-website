@@ -1,15 +1,15 @@
 import React from "react";
 import { ServicesBox } from "./ServicesBox";
 
-import socialIcon from "../../public/imgs/socialIcon.webP";
-// import videosIcon from "../../public/imgs/vidsIcon.webP";
-// import graphicIcon from "../../public/imgs/graphiIcon.webP";
-// import metaIcon from "../../public/imgs/mtaIcon.webP";
-// import brandIcon from "../../public/imgs/brndIcon.webP";
-import dataIcon from "../../public/imgs/dataIcon.webP";
-import webdevIcon from "../../public/imgs/webdevIcon.webP";
-import modelingIcon from "../../public/imgs/modlingIcon.webP";
-import customerIcon from "../../public/imgs/customerIcon.webP";
+import socialIcon from "../../public/imgs/services/socialIcon.png";
+import videosIcon from "../../public/imgs/services/videosIcon.png";
+import graphicIcon from "../../public/imgs/services/graphicIcon.png";
+import metaIcon from "../../public/imgs/services/metaIcon.png";
+import brandIcon from "../../public/imgs/services/brandIcon.png";
+import dataIcon from "../../public/imgs/services/dataIcon.png";
+import webdevIcon from "../../public/imgs/services/webdevIcon.png";
+import modelingIcon from "../../public/imgs/services/modelingIcon.png";
+import customerIcon from "../../public/imgs/services/customerIcon.png";
 
 import useTranslation from "next-translate/useTranslation";
 
@@ -23,7 +23,7 @@ function ServicesSection() {
         imageAlt={t("services-boxes.0.title")}
         Icon={socialIcon}
       />
-{/* 
+
       <ServicesBox
         title={t("services-boxes.1.title")}
         description={t("services-boxes.1.description")}
@@ -50,7 +50,7 @@ function ServicesSection() {
         description={t("services-boxes.4.description")}
         imageAlt={t("services-boxes.4.title")}
         Icon={brandIcon}
-      /> */}
+      />
 
       <ServicesBox
         title={t("services-boxes.5.title")}
