@@ -2,14 +2,18 @@ import React from "react";
 import Image from "next/image";
 import logo from "../../public/imgs/logo.png";
 import Link from "next/link";
-import mainIcon from "/public/imgs/mail-icon.svg";
+import mainIcon from "/public/imgs/icons/mail-icon.svg";
 import setLanguage from "next-translate/setLanguage";
 
 export default function Footer() {
   return (
     <div
       className="w-full py-[3em] px-[3em] bg-[#282828] text-white
-      grid grid-cols-[20em_max-content_max-content_1fr_100px] grid-rows-2 gap-3
+      grid 
+
+      grid-rows-2 lg:gap-3 gap-5
+      lg:grid-cols-[20em_max-content_max-content_1fr_100px] 
+      
     "
     >
       <div className="desc row-span-2 flex flex-col">
@@ -41,7 +45,7 @@ export default function Footer() {
         </ul>
       </div>
 
-      <div className="contact-us ml-6">
+      <div className="contact-us lg:ml-6">
         <div className="text-xl font-bold">Contact Us</div>
         <ul className="underline">
           <Link href="/About-Us">
@@ -60,7 +64,7 @@ export default function Footer() {
         </ul>
       </div>
 
-      <div className="language justify-self-end ml-6">
+      <div className="language lg:justify-self-end lg:ml-6">
         <div className="text-xl font-bold">language</div>
         <ul className="underline">
           <li>
@@ -87,10 +91,6 @@ export default function Footer() {
           Hire Us
         </button>
       </div>
-
-      <div className="fotter-bottom col-span-4">
-        <div className="text-xl font-bold text-center">Follow Us</div>
-        </div>
     </div>
   );
 }

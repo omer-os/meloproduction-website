@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
+import BlueButton from "../components/BlueButton";
 
 export function Sec1({ homeSvg }) {
   const { t, lang } = useTranslation("home");
@@ -27,12 +28,8 @@ export function Sec1({ homeSvg }) {
         </h2>
 
         <div className="flex capitalize ssm:justify-start justify-center gap-3">
-          <button className="flex justify-between items-center text-white bg-blue-600 py-1 md:px-4 px-2 md:text-lg rounded capitalize font-bold">
-            {t("btn-1")}
-          </button>
-          <button className="flex justify-between items-center text-white bg-blue-600  py-1  md:px-4 px-2 md:text-lg rounded capitalize font-bold">
-            {t("btn-2")}
-          </button>
+          <BlueButton text={t("btn-1")}/>
+          <BlueButton text={t("btn-2")}/>
         </div>
       </div>
 
@@ -40,9 +37,8 @@ export function Sec1({ homeSvg }) {
         <Image
           src={homeSvg}
           alt="man holding paper"
-          placeholder="blur"
-          blurDataURL
           layout="responsive"
+          priority
         />
       </div>
     </div>
