@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import useTranslation from "next-translate/useTranslation";
 import { logo1 } from "../../public/imgs/logo1.jpg";
 import Link from "next/link";
-
+import BlueButton from "../Buttons/BlueButton";
 export default function NavBar() {
   const [Open, setOpen] = useState(false);
 
   const { t, lang } = useTranslation("navbar");
   return (
     <>
-      <div className="flex bg-white justify-between md:py-3 sticky top-0 left-0 z-50 md:px-9 px-6 py-4 items-center">
+      <div className="flex shadow-md bg-white justify-between md:py-3 sticky top-0 left-0 z-50 md:px-9 px-6 py-4 items-center">
         <Link href="/">
           <div className="flex cursor-pointer md:text-xl z-50 flex-1 font-bold">
             {t("logo")}
@@ -35,9 +35,7 @@ export default function NavBar() {
         </div>
 
         <div className="hidden md:flex justify-end flex-1">
-          <div className="capitalize cursor-pointer w-max bg-blue-600 text-white py-2 px-5 rounded md:font-bold">
-            {t("btn")}
-          </div>
+          <BlueButton text={t("btn")} link="/contact-us" />
         </div>
 
         <div

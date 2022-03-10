@@ -1,4 +1,5 @@
 {
+  "page-title": "home page",
   "title": "We inspire brands and people to grow and develop.",
   "about": "We are composed of cross-skilled individuals that focus on growing your brand.",
   "btn-1": "hire us",
@@ -43,5 +44,56 @@
       "title": "Customer Management",
       "description": "Moody and unpredictble, growing a customer base and maintaining it can be a very difficult task, however, we make it easier for you to do so."
     }
-  ]
+  ],
+
+  "who-we-are": {
+    "title": "Who We Are",
+    "description": "We are a cross-functional team, skilled in fields involving the production and marketing of visual digital and non-digital content.",
+    "btn": "Learn More"
+  },
+
+  "why-us": {
+    "title": "Why People Choose Us?",
+    "description": "In a market where everything moves quickly, and where businesses are opening everyday, staying ahead can be challenging. Your brand can move on its own in such a market, however, if you cannot let others move faster than you, then you will need us.",
+
+    "why-us-cards": [
+      {
+        "card": "1",
+        "title": "Dynamic Marketing",
+        "description": "In order for your brand to be well-known, it should connect to people. We help you in creating a bond between your brand and your customers."
+      },
+
+      {
+        "card": "2",
+        "title": "Networking",
+        "description": "The market is usually made of businesses that are related to each other, and we help connect you with other business partners."
+      },
+      {
+        "card": "3",
+        "title": "Be unique",
+        "description": "Developing your brand in a way that enables you to stand out, and be recognized as a leader in business. Being unique requires innovation and this is what we are here for."
+      },
+      {
+        "card": "4",
+        "title": "Public Relations",
+        "description": "Our experience with people, and awareness of how society and markets relate, makes us the suitable go-to team in time of crisis."
+      }
+    ]
+  },
+
+  "our-work": {
+    "title": "Our Work",
+    "btn": "View All"
+  },
+  "our-clinets": {
+    "title": "our clintes"
+  },
+  "Business-Growth-Section":{
+    "title": "Business Growth Depends on Marketing and Technology",
+    "description": "Marketing does not end when you make sales. Sales end when you stop marketing.",
+    "btn": "Start Marketing"
+  },
+  "contact-us-section":{
+    "title": "Contact Us for more Details"
+  }
 }
