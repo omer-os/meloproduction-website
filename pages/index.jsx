@@ -27,12 +27,12 @@ export default function Index() {
 
   return (
     <>
-      <Meta
+      {/* <Meta
         title={t("page-title")}
         desc={t("about")}
         css="/static/css/styles.css"
         js="/static/js/scripts.js"
-      />
+      /> */}
 
       <Sec1 />
       <Hr />

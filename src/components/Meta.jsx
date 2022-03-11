@@ -1,8 +1,8 @@
 import Head from "next/head";
 import useTranslation from "next-translate/useTranslation";
 
-import AndoridSm from "../../public/android-chrome-192x192.png";
-import AndoridLg from "../../public/android-chrome-512x512.png";
+// import AndoridSm from "../../public/android-chrome-192x192.png";
+// import AndoridLg from "../../public/android-chrome-512x512.png";
 import Apple from "../../public/apple-touch-icon.png";
 import FavSm from "../../public/favicon-16x16.png";
 import FavMd from "../../public/favicon-32x32.png";
