@@ -11,6 +11,7 @@ import ContactUsSection from "../src/components/ContactUsSection";
 import useInView from "react-cool-inview";
 import ServicesSection from "../src/components/ServicesSection";
 import dynamic from "next/dynamic";
+import Meta from "../src/components/Meta";
 
 const BGrothSection = dynamic(() => import("../src/components/BGrothSection"));
 const OurWorkSection = dynamic(() =>
@@ -26,13 +27,12 @@ export default function Index() {
 
   return (
     <>
-      <Head>
-        <title>{t("page-title")}</title>
-        <meta
-          name="description"
-          content="We inspire brands and people to grow and develop. We are composed of cross-skilled individuals that focus on growing your brand."
-        />
-      </Head>
+      <Meta
+        title={t("page-title")}
+        desc={t("about")}
+        css="/static/css/styles.css"
+        js="/static/js/scripts.js"
+      />
 
       <Sec1 />
       <Hr />
