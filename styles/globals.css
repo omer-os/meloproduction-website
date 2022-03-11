@@ -10,8 +10,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-@layout utilities {
-  .blue-btn {
-    @apply flex justify-between items-center text-white bg-blue-600 py-1 md:px-4 px-2 md:text-lg rounded capitalize font-bold;
-  }
+
+*{
+  -webkit-tap-highlight-color:transparent;
 }
