@@ -86,7 +86,8 @@ export default function Footer() {
           <ul className="underline">
             <li>
               <button
-                onClick={async () => await setLanguage("en")}
+                // onClick={()=>setLanguage("en")}
+                onClick={() => setLanguage("en")}
                 className="cursor-pointer"
               >
                 {t("footer.language.english")}
@@ -94,7 +95,7 @@ export default function Footer() {
             </li>
             <li>
               <button
-                onClick={async () => await setLanguage("ar")}
+                onClick={() => setLanguage("ar")}
                 className="cursor-pointer"
               >
                 {t("footer.language.arabic")}
@@ -184,10 +185,7 @@ export default function Footer() {
           </a>
         </div>
 
-
-        <div className="text-sm text-white">{
-          t("footer.copyright")
-        }</div>
+        <div className="text-sm text-white">{t("footer.copyright")}</div>
       </div>
     </div>
   );

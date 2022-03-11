@@ -1,9 +1,14 @@
 {
-  "logo": "Melo Productions",
+  "logo": "Melo Production",
   "home": "الرئيسية",
   "about": "عنا",
   "services": "خدماتنا",
   "btn": "اتصل بنا",
+  
+  "404": {
+    "title":"الصفحة التي تبحث عنها غير موجودة",
+    "btn":"عد الى الصفحة الرىْيسية"
+  },
 
   "footer": {
     "about": {

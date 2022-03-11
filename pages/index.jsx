@@ -1,5 +1,5 @@
 import { ServicesSecTitle } from "../src/components/ServicesSecTitle";
-import { Sec1 } from "../src/MainComponents/Sec1";
+import { Sec1 } from "../src/components/Sec1";
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
 import Hr from "../src/components/Hr";

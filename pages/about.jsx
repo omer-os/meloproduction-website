@@ -2,6 +2,10 @@ import React from "react";
 import whoWeAreBg from "../public/imgs/who-we-are-bg.jpg";
 import Image from "next/image";
 import BlueButton from "../src/Buttons/BlueButton";
+
+
+
+
 export default function WhoWeAre() {
   return (
     <div className="w-full flex flex-col my-[2.5em] items-center">
