@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import useTranslation from "next-translate/useTranslation";
+import setLanguage from "next-translate/setLanguage";
 import Link from "next/link";
 import BlueButton from "../Buttons/BlueButton";
 export default function NavBar() {
   const [Open, setOpen] = useState(false);
+const [DropDown, setDropDown] = useState(false)
 
   const { t, lang } = useTranslation("common");
   return (
@@ -17,20 +19,34 @@ export default function NavBar() {
 
         <div className="hidden md:flex text-gray-600 text-base capitalize justify-between gap-6 bg-red">
           <Link href="/">
-            <a className="cursor-pointer hover:text-blue-600 transition-all duration-75" onClick={() => setOpen(!Open)}>
+            <a
+              className="cursor-pointer hover:text-blue-600 transition-all duration-75"
+              onClick={() => setOpen(!Open)}
+            >
               {t("home")}
             </a>
           </Link>
           <Link href="/about">
-            <a className="cursor-pointer hover:text-blue-600 transition-all duration-75" onClick={() => setOpen(!Open)}>
+            <a
+              className="cursor-pointer hover:text-blue-600 transition-all duration-75"
+              onClick={() => setOpen(!Open)}
+            >
               {t("about")}
             </a>
           </Link>
           <Link href="/services">
-            <a className="cursor-pointer hover:text-blue-600 transition-all duration-75" onClick={() => setOpen(!Open)}>
+            <a
+              className="cursor-pointer hover:text-blue-600 transition-all duration-75"
+              onClick={() => setOpen(!Open)}
+            >
               {t("services")}
             </a>
           </Link>
+
+          <button className="dropdown" onClick={()=>setDropDown(!DropDown)}>
+            language
+            <div className={`absolute bg-white border px-5 rounded dropdown-content transition-all duration-100 ${DropDown ? "show bottom-0 opacity-1" : "hidden bottom-20 opacity-0"}`}>kkk</div>
+          </button>
         </div>
 
         <div className="hidden md:flex justify-end flex-1">
