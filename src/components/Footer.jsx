@@ -36,24 +36,24 @@ export default function Footer() {
           <div className="text-xl font-bold">
             {t("footer.information.title")}
           </div>
-          <ul className="underline flex flex-col">
+          <ul className="underline gap-1 flex flex-col">
             <Link href="/about">
-              <a className="cursor-pointer">
+              <a className="cursor-pointer block">
                 {t("footer.information.about-us")}
               </a>
             </Link>
             <Link href="/Our-Services">
-              <a className="cursor-pointer">
+              <a className="cursor-pointer block">
                 {t("footer.information.services")}
               </a>
             </Link>
             <Link href="/Our-Clintes">
-              <a className="cursor-pointer">
+              <a className="cursor-pointer block">
                 {t("footer.information.clients")}
               </a>
             </Link>
             <Link href="/Our-Projects">
-              <a className="cursor-pointer">
+              <a className="cursor-pointer block">
                 {t("footer.information.projects")}
               </a>
             </Link>
