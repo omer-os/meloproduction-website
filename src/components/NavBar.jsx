@@ -3,14 +3,23 @@ import useTranslation from "next-translate/useTranslation";
 import setLanguage from "next-translate/setLanguage";
 import Link from "next/link";
 import BlueButton from "../Buttons/BlueButton";
+
 export default function NavBar() {
   const [Open, setOpen] = useState(false);
-const [DropDown, setDropDown] = useState(false)
-
+  const [DropDown, setDropDown] = useState(false);
   const { t, lang } = useTranslation("common");
+
   return (
     <>
+      <div 
+      onClick={()=>setDropDown(false)}
+      className={`bg-gray-700/10 inset-0 z-50 fixed ${DropDown?"show":"hidden"}`}></div>
+
       <div className="flex shadow-md bg-white justify-between md:py-3 sticky top-0 left-0 z-50 md:px-9 px-6 py-4 items-center">
+
+
+
+
         <Link href="/">
           <div className="flex cursor-pointer md:text-xl z-50 flex-1 font-bold">
             {t("logo")}
@@ -43,10 +52,45 @@ const [DropDown, setDropDown] = useState(false)
             </a>
           </Link>
 
-          <button className="dropdown" onClick={()=>setDropDown(!DropDown)}>
-            language
-            <div className={`absolute bg-white border px-5 rounded dropdown-content transition-all duration-100 ${DropDown ? "show bottom-0 opacity-1" : "hidden bottom-20 opacity-0"}`}>kkk</div>
-          </button>
+          <div className="drop-down group relative">
+            <button className="dropdown" onClick={() => setDropDown(!DropDown)}>
+              {t("footer.language.title")}
+            </button>
+
+            <div
+              id="dropdownSmall"
+              className={`${
+                !DropDown ? "hidden" : "show"
+              } absolute right-0 z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600`}
+            >
+              <ul className="py-1">
+                <li>
+                  <a
+                    className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  onClick={
+                    ()=>{setLanguage("ar");setDropDown(!DropDown)}
+                  }
+                  >
+                    {
+                      t("footer.language.arabic")
+                    }
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  onClick={
+                    ()=>{setLanguage("en");setDropDown(!DropDown)}
+                  }
+                  >
+                    {
+                      t("footer.language.english")
+                    }
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div className="hidden md:flex justify-end flex-1">

@@ -5,13 +5,13 @@ import Link from "next/link";
 import setLanguage from "next-translate/setLanguage";
 import useTranslation from "next-translate/useTranslation";
 
-import phoneIcon from "/public/imgs/icons/phone-icon.svg";
-import mailIcon from "/public/imgs/icons/mail-icon.svg";
-import locationIcon from "/public/imgs/icons/location-icon.svg";
-import insta from "../../public/imgs/icons/insta.svg";
-import facebook from "../../public/imgs/icons/facebook.svg";
-import linkdin from "../../public/imgs/icons/linkdin.svg";
-import youtube from "../../public/imgs/icons/youtube.svg";
+// import phoneIcon from "/public/imgs/icons/phone-icon.svg";
+// import mailIcon from "/public/imgs/icons/mail-icon.svg";
+// import locationIcon from "/public/imgs/icons/location-icon.svg";
+// import insta from "../../public/imgs/icons/insta.svg";
+// import facebook from "../../public/imgs/icons/facebook.svg";
+// import linkdin from "../../public/imgs/icons/linkdin.svg";
+// import youtube from "../../public/imgs/icons/youtube.svg";
 
 export default function Footer() {
   const { t, lang } = useTranslation("common");
@@ -24,7 +24,9 @@ export default function Footer() {
       >
         <div className="desc row-span-2 flex flex-col">
           <div className="w-[6em] mb-1">
-            <Image src={logo} layout="responsive" />
+            <Link href="/">
+              <Image src={logo} layout="responsive" />
+            </Link>
           </div>
           <div className="text-xl font-bold">{t("footer.about.title")}</div>
           <div className="text-lg">{t("footer.about.body")}</div>
@@ -86,7 +88,6 @@ export default function Footer() {
           <ul className="underline">
             <li>
               <button
-                // onClick={()=>setLanguage("en")}
                 onClick={() => setLanguage("en")}
                 className="cursor-pointer"
               >
