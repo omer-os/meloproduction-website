@@ -79,6 +79,7 @@ export default function index() {
         {worksList.map((item) => {
 
           return <ProjectBox
+          key={item.id}
             img={item.img}
             text={item.title}
             btnText="View Project"
