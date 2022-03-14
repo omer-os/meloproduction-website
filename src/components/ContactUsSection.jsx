@@ -10,6 +10,7 @@ import mailIcon from "/public/imgs/icons/mail-icon.svg";
 import locationIcon from "/public/imgs/icons/location-icon.svg";
 import useTranslation from "next-translate/useTranslation";
 
+
 export default function ContactUsSection() {
   const { t, lang } = useTranslation("home");
 

@@ -26,8 +26,7 @@ export default function Footer() {
           <div className="w-[6em] mb-1">
             <Link href="/">
               <div>
-              <Image src={logo} layout="responsive" />
-              
+                <Image src={logo} layout="responsive" />
               </div>
             </Link>
           </div>

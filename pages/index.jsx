@@ -25,6 +25,9 @@ export default function Index() {
     onEnter: ({ unobserve }) => unobserve(), // only run once
   });
 
+
+  // console.log(localStorage);
+
   return (
     <>
       {/* <Meta
