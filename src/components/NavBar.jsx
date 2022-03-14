@@ -51,6 +51,14 @@ export default function NavBar() {
               {t("services")}
             </a>
           </Link>
+          <Link href="/projects">
+            <a
+              className="cursor-pointer hover:text-blue-600 transition-all duration-75"
+              onClick={() => setOpen(!Open)}
+            >
+              {t("projects")}
+            </a>
+          </Link>
 
           <LanguageDropDown
             setDropDown={setDropDown}
@@ -107,6 +115,17 @@ export default function NavBar() {
               {t("services")}
             </div>
           </Link>
+          <Link href="/projects">
+            <div className="cursor-pointer" onClick={() => setOpen(!Open)}>
+              {t("projects")}
+            </div>
+          </Link>
+
+
+        
+
+
+
           <LanguageDropDown
             setDropDown={setDropDown}
             DropDown={DropDown}

@@ -4,6 +4,8 @@
   "about": "about",
   "services": "services",
   "btn": "contact us",
+  "projects": "projects",
+
   "404": {
     "title":"The page you are looking for does not exist",
     "btn":"back to home page"
