@@ -25,7 +25,10 @@ export default function Footer() {
         <div className="desc row-span-2 flex flex-col">
           <div className="w-[6em] mb-1">
             <Link href="/">
+              <div>
               <Image src={logo} layout="responsive" />
+              
+              </div>
             </Link>
           </div>
           <div className="text-xl font-bold">{t("footer.about.title")}</div>
