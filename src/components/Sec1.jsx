@@ -3,7 +3,6 @@ import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
 import BlueButton from "../Buttons/BlueButton";
 import homeSvg from "../../public/imgs/home-person-svg.svg";
-import { useMemo } from "react";
 
 export function Sec1() {
   const { t, lang } = useTranslation("home");
