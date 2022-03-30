@@ -4,6 +4,7 @@ import useTranslation from "next-translate/useTranslation";
 import setLanguage from "next-translate/setLanguage";
 import Link from "next/link";
 import BlueButton from "../Buttons/BlueButton";
+import { useMemo } from "react";
 
 export default function NavBar() {
   const [Open, setOpen] = useState(false);
@@ -120,11 +121,6 @@ export default function NavBar() {
               {t("projects")}
             </div>
           </Link>
-
-
-        
-
-
 
           <LanguageDropDown
             setDropDown={setDropDown}
