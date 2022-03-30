@@ -12,12 +12,17 @@ import ServicesSection from "../src/components/ServicesSection";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 
-import { motion } from "framer-motion";
+
+
 
 const BGrothSection = dynamic(() => import("../src/components/BGrothSection"));
 const OurWorkSection = dynamic(() =>
   import("../src/components/OurWorkSection")
 );
+
+
+
+
 
 export default function Index() {
   const { t, lang } = useTranslation("home");

@@ -18,9 +18,13 @@ import proj15 from "./imgs/demo-graphic-set/proj15.jpg";
 import ClearRoundedIcon from "@mui/icons-material/ClearRounded";
 import { IconButton } from "@mui/material";
 import { motion } from "framer-motion";
+import Button from "@mui/material/Button";
+import Link from "next/link";
+import useTranslation from "next-translate/useTranslation";
 
 export default function DemoGraphicSet() {
   const [ShowImg, setShowImg] = useState(null);
+  const { lang } = useTranslation();
 
   const imgs = [
     proj1,
@@ -40,30 +44,36 @@ export default function DemoGraphicSet() {
     proj15,
   ];
 
+  const text = {
+    en: {
+      title: "مجموعة تصميم الجرافيك التجريبي",
+      about:
+        "collection of graphic design sets that we have worked on our clinets. click on the image to see it in full size.",
+    },
+    ar: {
+      title: "مجموعة تصميم الجرافيك التقريبية",
+      about:
+        "مجموعة من مجموعات التصميم الجرافيكي التي عملنا عليها على عملائنا. اضغط على الصورة لرؤيتها بالحجم الكامل",
+    },
+  };
+
+
   return (
-    <div>
+    <div className="sm:px-[4em] px-[2em]">
       <h1 className="mt-[3em] font-bold text-2xl text-center">
-        Demo Graphic Design Set
+        {lang === "ar" ? text.ar.title : text.en.title}
       </h1>
       <h2 className="text-xl text-center max-w-[20em] mx-auto mt-[.5em]">
-        collection of graphic design sets that we have worked on for our
-        clinets. click on the image to see it in full size.
+        {lang === "ar" ? text.ar.about : text.en.about}
       </h2>
 
-      <div
-        className="grid my-[2em] max-w-[700px]
-      grid-cols-3
-      auto-rows-[300px]
-      gap-[1em]
-      relative
-      mx-auto
-      "
-      >
+      <div className="grid my-[2em] max-w-[700px] gap-[1em] relative mx-auto md:grid-cols-3 sm:grid-cols-2 ">
         {imgs.map((img, i) => (
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
+            whileInView={{
+              scale: [0.8, 1],
+              opacity: [0, 1],
+            }}
             key={i}
             className="relative cursor-zoom-in"
             onClick={() => {
@@ -80,22 +90,10 @@ export default function DemoGraphicSet() {
 
         {ShowImg && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
             className="img-preview top-0 left-0 fixed z-[1000] w-screen h-screen bg-black/80 flex justify-center items-center"
             onClick={() => setShowImg(null)}
           >
-            <div
-              className="img relative 
-          sm:w-[400px] 
-          sm:h-[500px]
-          xs:w-[300px]
-          xs:h-[400px]
-          w-[300px]
-          h-[400px]
-          "
-            >
+            <div className="img relative sm:w-[400px]  sm:h-[500px] xs:w-[300px] xs:h-[400px] w-[300px] h-[400px] ">
               <Image
                 src={ShowImg}
                 layout="fill"
@@ -114,6 +112,20 @@ export default function DemoGraphicSet() {
             </div>
           </motion.div>
         )}
+      </div>
+
+      <div className="mx-auto mb-[2em] w-max">
+        <Link href="/hire-us">
+          <a>
+            <Button
+              variant="contained"
+              color="primary"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              start working with us
+            </Button>
+          </a>
+        </Link>
       </div>
     </div>
   );

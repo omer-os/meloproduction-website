@@ -1,16 +1,29 @@
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
+import { motion } from "framer-motion";
+
 export function ServicesSecTitle() {
   const { t } = useTranslation("home");
 
   return (
     <>
-      <div className="text-3xl text-center font-bold pt-[40px]">
+      <motion.div
+        whileInView={{
+          opacity: [0, 1],
+          scale:[.5,1]
+        }}
+        className="text-3xl text-center font-bold pt-[40px]"
+      >
         {t("services")}
-      </div>
-      <div className="text-xl text-gray-600 max-w-[350px] m-auto text-center py-[20px]">
+      </motion.div>
+      <motion.div
+        whileInView={{
+          opacity: [0, 1],
+          scale:[.5,1]
+        }}
+      className="text-xl text-gray-600 max-w-[350px] m-auto text-center py-[20px]">
         {t("services-1")}
-      </div>
+      </motion.div>
     </>
   );
 }
