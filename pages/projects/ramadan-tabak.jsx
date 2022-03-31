@@ -14,10 +14,7 @@ export default function ramadantabak() {
           height="100%"
           src="https://www.youtube.com/embed/taw0NltN3lA"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          
         ></iframe>
       </div>
 
