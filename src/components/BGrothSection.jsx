@@ -8,7 +8,7 @@ export default function BGrothSection() {
   const { t, lang } = useTranslation("home");
   return (
     <div className="w-full min-h-[20em] py-[1em] justify-center relative bg-cover px-[1em] sm:px-[3em] flex flex-col gap-3 text-white items-center text-center">
-      <Image src={bgImg} priority layout="fill" />
+      <Image alt="Image of working people" src={bgImg} priority layout="fill" />
 
       <div className="title sm:text-3xl text-2xl lg:max-w-[20em] z-20 font-bold">
         {t("Business-Growth-Section.title")}
@@ -19,7 +19,7 @@ export default function BGrothSection() {
 
 
 
-      <Link href="/services">
+      <Link passHref href="/services">
         <a className="mx-auto z-20 w-max">
           <RedButton text={t("Business-Growth-Section.btn")} reversed />
         </a>

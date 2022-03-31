@@ -18,7 +18,7 @@ export default function ContactUsSection() {
     <div className="flex flex-col gap-3 justify-center text-center my-[3em]">
       <div className="text-2xl font-bold">{t("contact-us-section.title")}</div>
 
-      <Link href="https://goo.gl/maps/m2DBWByGsFYZhr6BA">
+      <Link passHref href="https://goo.gl/maps/m2DBWByGsFYZhr6BA">
         <div className="flex hover:underline cursor-pointer justify-center gap-2 text-xl">
           <Image
             src={locationIcon}

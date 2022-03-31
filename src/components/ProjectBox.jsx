@@ -11,7 +11,7 @@ export function ProjectBox({ img, text, btnText, link }) {
       </div>
 
       <div className="text-xl text-center capitalize font-bold">{text}</div>
-      <Link href={link}>
+      <Link passHref href={link}>
         <a>
           <button className="btn px-4 py-2 rounded text-white text-sm font-bold bg-blue-600">
             {btnText}

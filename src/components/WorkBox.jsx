@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export default function WorkBox({ img, title, link }) {
   return (
-    <Link href={link}>
-      <div className="flex cursor-pointer rounded-xl relative group overflow-hidden flex-col">
+    <Link passHref href={link}>
+      <a className="flex cursor-pointer rounded-xl relative group overflow-hidden flex-col">
         <div className="img">
-          <Image src={img} layout="responsive" />
+          <Image src={img} alt="a project" layout="responsive" />
         </div>
 
         <div className="img-box group-hover:top-0 top-full transition-all duration-300 absolute bg-red-700/75 w-full h-full flex justify-center items-center">
@@ -15,7 +15,7 @@ export default function WorkBox({ img, title, link }) {
             {title}
           </div>
         </div>
-      </div>
+      </a>
     </Link>
   );
 }

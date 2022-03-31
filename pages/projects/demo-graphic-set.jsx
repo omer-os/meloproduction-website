@@ -22,6 +22,7 @@ import Button from "@mui/material/Button";
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
 import GoUpButton from "../../src/components/GoUpButton";
+import GoBackBtn from "../../src/components/GoBackBtn";
 export default function DemoGraphicSet() {
   const [ShowImg, setShowImg] = useState(null);
   const { lang } = useTranslation();
@@ -46,7 +47,7 @@ export default function DemoGraphicSet() {
 
   const text = {
     en: {
-      title: "مجموعة تصميم الجرافيك التجريبي",
+      title: "Demo Graphic Set",
       about:
         "collection of graphic design sets that we have worked on our clinets. click on the image to see it in full size.",
     },
@@ -82,6 +83,7 @@ export default function DemoGraphicSet() {
               src={img}
               layout="responsive"
               className="absolute top-0 left-0"
+              alt={`project ${i}`}
             />
           </motion.div>
         ))}
@@ -126,8 +128,12 @@ export default function DemoGraphicSet() {
             </Button>
           </a>
         </Link>
-      </div>{" "}
+      </div>
+
       <GoUpButton />
+      <div className="mx-auto w-max transition-all duration-150">
+        <GoBackBtn />
+      </div>
     </div>
   );
 }

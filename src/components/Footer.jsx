@@ -5,14 +5,6 @@ import Link from "next/link";
 import setLanguage from "next-translate/setLanguage";
 import useTranslation from "next-translate/useTranslation";
 
-// import phoneIcon from "/public/imgs/icons/phone-icon.svg";
-// import mailIcon from "/public/imgs/icons/mail-icon.svg";
-// import locationIcon from "/public/imgs/icons/location-icon.svg";
-// import insta from "../../public/imgs/icons/insta.svg";
-// import facebook from "../../public/imgs/icons/facebook.svg";
-// import linkdin from "../../public/imgs/icons/linkdin.svg";
-// import youtube from "../../public/imgs/icons/youtube.svg";
-
 export default function Footer() {
   const { t, lang } = useTranslation("common");
 
@@ -24,9 +16,9 @@ export default function Footer() {
       >
         <div className="desc row-span-2 flex flex-col">
           <div className="w-[6em] mb-1">
-            <Link href="/">
+            <Link passHref href="/">
               <div>
-                <Image src={logo} layout="responsive" />
+                <Image src={logo} alt="our logo" layout="responsive" />
               </div>
             </Link>
           </div>
@@ -38,56 +30,56 @@ export default function Footer() {
           <div className="text-xl font-bold">
             {t("footer.information.title")}
           </div>
-          <ul className="underline gap-1 flex flex-col">
-            <Link href="/about">
+          <div className="underline gap-3 flex flex-col">
+            <Link passHref href="/about">
               <a className="cursor-pointer block">
                 {t("footer.information.about-us")}
               </a>
             </Link>
-            <Link href="/Our-Services">
+            <Link passHref href="/Our-Services">
               <a className="cursor-pointer block">
                 {t("footer.information.services")}
               </a>
             </Link>
-            <Link href="/Our-Clintes">
+            <Link passHref href="/Our-Clintes">
               <a className="cursor-pointer block">
                 {t("footer.information.clients")}
               </a>
             </Link>
-            <Link href="/Our-Projects">
+            <Link passHref href="/Our-Projects">
               <a className="cursor-pointer block">
                 {t("footer.information.projects")}
               </a>
             </Link>
-          </ul>
+          </div>
         </div>
 
         <div className="contact-us lg:ml-6">
           <div className="text-xl font-bold">
             {t("footer.contact-us.title")}
           </div>
-          <ul className="underline flex flex-col">
-            <Link href="https://goo.gl/maps/8gxxLzQXdQbaQEfr8">
+          <div className="underline flex flex-col gap-2">
+            <Link passHref href="https://goo.gl/maps/8gxxLzQXdQbaQEfr8">
               <a className="cursor-pointer w-max">
                 {t("footer.contact-us.location")}
               </a>
             </Link>
-            <Link href="mailto:info@meloproduction.me">
+            <Link passHref href="mailto:info@meloproduction.me">
               <a className="cursor-pointer w-max">
                 {t("footer.contact-us.email")}
               </a>
             </Link>
-            <Link href="tel:+964-770-580-3570">
+            <Link passHref href="tel:+964-770-580-3570">
               <a className="cursor-pointer w-max">
                 {t("footer.contact-us.phone")}
               </a>
             </Link>
-          </ul>
+          </div>
         </div>
 
         <div className="language lg:justify-self-end lg:col-start-4 sm:col-start-2 lg:ml-6">
           <div className="text-xl font-bold">{t("footer.language.title")}</div>
-          <ul className="underline">
+          <ul className="underline flex flex-col gap-2">
             <li>
               <button
                 onClick={() => setLanguage("en")}
@@ -108,9 +100,11 @@ export default function Footer() {
         </div>
 
         <div className="hire-us">
-          <button className="text-black bg-white py-2 px-5 rounded-md font-bold">
-            {t("footer.btn")}
-          </button>
+          <Link passHref href="/hire-us">
+            <button className="text-black bg-white py-2 px-5 rounded-md font-bold">
+              {t("footer.btn")}
+            </button>
+          </Link>
         </div>
       </div>
       <div className="w-4/6 h-1 mx-auto bg-gray-200 rounded"></div>
@@ -122,6 +116,7 @@ export default function Footer() {
         {/* NOTE: Here i used svg code directly so that i can change the svg color to white */}
         <div className="flex items-center justify-center gap-3">
           <a
+            aria-label="instagram icon"
             href="https://instagram.com/meloproduction.me"
             className="w-[1.8em]"
           >
@@ -139,6 +134,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
+            aria-label="facebook icon"
             href="https://www.youtube.com/channel/UCKI6WkBDez7ER_0CvZ3xp7A"
             className="w-[2.3em]"
           >
@@ -156,6 +152,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
+            aria-label="instagram icon"
             href="https://www.linkedin.com/company/melo-production-me"
             className="w-[1.6em]"
           >
@@ -172,7 +169,11 @@ export default function Footer() {
               />
             </svg>
           </a>
-          <a href="https://facebook.com/MeloPrduction" className="w-[.8em]">
+          <a
+            aria-label="youtube icon"
+            href="https://facebook.com/MeloPrduction"
+            className="w-[.8em]"
+          >
             <svg
               width="24"
               height="30"

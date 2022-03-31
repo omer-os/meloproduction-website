@@ -4,7 +4,7 @@ import useTranslation from "next-translate/useTranslation";
 import BlueButton from "../Buttons/BlueButton";
 import homeSvg from "../../public/imgs/home-person-svg.svg";
 
-export function Sec1() {
+export default function Sec1() {
   const { t, lang } = useTranslation("home");
 
   return (

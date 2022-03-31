@@ -25,7 +25,7 @@ export default function ContactUs() {
     >
       <div className="flex md:flex-row flex-col gap-5">
         <div className="mail-img w-[20em]">
-          <Image src={MailImg} layout="responsive" />
+          <Image alt="mail icon" src={MailImg} layout="responsive" />
         </div>
         <div className="flex gap-4 flex-col">
           <div className="text-2xl font-bold">{t("title")}</div>
@@ -63,7 +63,7 @@ export default function ContactUs() {
           {t("contact-us-section.title")}
         </div>
 
-        <Link href="https://goo.gl/maps/m2DBWByGsFYZhr6BA">
+        <Link  passHref href="https://goo.gl/maps/m2DBWByGsFYZhr6BA">
           <div className="flex hover:underline cursor-pointer justify-center gap-2 text-xl">
             <Image
               src={locationIcon}

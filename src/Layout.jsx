@@ -3,12 +3,26 @@ import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
+import Head from "next/head";
+import useTranslation from "next-translate/useTranslation";
+
 export default function Layout({ children }) {
-  const variants = "";
   const router = useRouter();
+  const { t, lang } = useTranslation();
 
   return (
     <>
+      <Head>
+        <title>{router.pathname === "/" ? "Home" : router.pathname}</title>
+        <meta
+          name="description"
+          content={
+            lang === "en"
+              ? "Melo Production. Public Relations Agency. We inspire brands and people to grow and develop."
+              : "نحن نلهم العلامات التجارية والأفراد للنمو والتطور."
+          }
+        />
+      </Head>
       <NavBar />
 
       <AnimatePresence initial={false} exitBeforeEnter>
@@ -35,7 +49,6 @@ export default function Layout({ children }) {
             exit: {
               opacity: 0,
               y: -100,
-              color: "transparent",
               transition: {
                 type: "keyframes",
                 duration: 0.15,

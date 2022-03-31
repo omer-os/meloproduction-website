@@ -21,14 +21,14 @@ export default function NavBar() {
       ></div>
 
       <div className="flex shadow-md  bg-white justify-between md:py-3 sticky top-0 left-0 z-50 md:px-9 px-6 py-4 items-center">
-        <Link href="/">
-          <div className="flex cursor-pointer md:text-xl z-50 flex-1 font-bold">
+        <Link passHref href="/">
+          <a className="flex cursor-pointer md:text-xl z-50 flex-1 font-bold">
             {t("logo")}
-          </div>
+          </a>
         </Link>
 
         <div className="hidden items-center md:flex text-gray-600 text-base capitalize justify-between gap-6 bg-red">
-          <Link href="/">
+          <Link passHref href="/">
             <a
               className="cursor-pointer hover:text-blue-600 transition-all duration-75"
               onClick={() => setOpen(!Open)}
@@ -36,7 +36,7 @@ export default function NavBar() {
               {t("home")}
             </a>
           </Link>
-          <Link href="/about">
+          <Link passHref href="/about">
             <a
               className="cursor-pointer hover:text-blue-600 transition-all duration-75"
               onClick={() => setOpen(!Open)}
@@ -44,7 +44,7 @@ export default function NavBar() {
               {t("about")}
             </a>
           </Link>
-          <Link href="/services">
+          <Link passHref href="/services">
             <a
               className="cursor-pointer hover:text-blue-600 transition-all duration-75"
               onClick={() => setOpen(!Open)}
@@ -52,7 +52,7 @@ export default function NavBar() {
               {t("services")}
             </a>
           </Link>
-          <Link href="/projects">
+          <Link passHref href="/projects">
             <a
               className="cursor-pointer hover:text-blue-600 transition-all duration-75"
               onClick={() => setOpen(!Open)}
@@ -101,25 +101,25 @@ export default function NavBar() {
         ${Open ? "left-0" : "-left-[100%]"}
         responsive transition-all duration-150 text-xl font-bold capitalize gap-7 ease-in-out flex flex-col md:hidden  items-center bg-white justify-center z-40 top-0 text-[#535353] left-0 h-screen w-full fixed`}
         >
-          <Link href="/">
-            <div className="cursor-pointer" onClick={() => setOpen(!Open)}>
+          <Link passHref href="/">
+            <a className="cursor-pointer" onClick={() => setOpen(!Open)}>
               {t("home")}
-            </div>
+            </a>
           </Link>
-          <Link href="/about">
-            <div className="cursor-pointer" onClick={() => setOpen(!Open)}>
+          <Link passHref href="/about">
+            <a className="cursor-pointer" onClick={() => setOpen(!Open)}>
               {t("about")}
-            </div>
+            </a>
           </Link>
-          <Link href="/services">
-            <div className="cursor-pointer" onClick={() => setOpen(!Open)}>
+          <Link passHref href="/services">
+            <a className="cursor-pointer" onClick={() => setOpen(!Open)}>
               {t("services")}
-            </div>
+            </a>
           </Link>
-          <Link href="/projects">
-            <div className="cursor-pointer" onClick={() => setOpen(!Open)}>
+          <Link passHref href="/projects">
+            <a className="cursor-pointer" onClick={() => setOpen(!Open)}>
               {t("projects")}
-            </div>
+            </a>
           </Link>
 
           <LanguageDropDown
@@ -128,15 +128,15 @@ export default function NavBar() {
             t={t}
             setLanguage={setLanguage}
           />
-          <Link href="/contact-us">
-            <div
+          <Link passHref href="/contact-us">
+            <a
               onClick={() => setOpen(!Open)}
               className="text-center cursor-pointer capitalize font-bold flex flex-col gap-8"
             >
               <div className="capitalize w-max bg-blue-600 text-white py-2 px-4 rounded md:font-bold">
                 {t("btn")}
               </div>
-            </div>
+            </a>
           </Link>
         </div>
       </div>

@@ -18,7 +18,7 @@ export default function OurClintes() {
   const coursel = useRef();
   const { t, lang } = useTranslation("home");
   useEffect(() => {
-    setWidth(coursel.current.scrollWidth - coursel.current.offsetWidth);
+    return setWidth(coursel.current.scrollWidth - coursel.current.offsetWidth);
   }, []);
 
   return (

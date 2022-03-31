@@ -12,7 +12,7 @@ export default function ErrorPage() {
   return (
     <div className="w-full gap-4 h-full px-4 flex justify-center items-center flex-col py-[4em]">
       <div className="img md:w-[20em] w-[14em]">
-        <Image src={svg} layout="responsive" />
+        <Image alt="404 image" src={svg} layout="responsive" />
       </div>
       <div className="text-2xl text-center text-[#857fee] font-bold">
         {t("404.title")}

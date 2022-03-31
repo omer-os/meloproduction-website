@@ -79,18 +79,18 @@ export default function OurWorkSection() {
 
       <div className="grid p-5 gap-5 md:grid-cols-4 transition-all grid-cols-2">
         {worksList.map((work) => (
-          <Link href={work.link} key={work.id}>
-            <a className="block">
+          <Link passHref href={work.link} key={work.id}>
+            <div className="block">
               <WorkBox title={work.title} img={work.img} link={work.link} />
-            </a>
+            </div>
           </Link>
         ))}
       </div>
 
-      <Link href="/projects">
-        <a className="w-max mx-auto">
+      <Link passHref href="/projects">
+        <div className="w-max mx-auto">
           <RedButton text={t("our-work.btn")} />
-        </a>
+        </div>
       </Link>
     </div>
   );

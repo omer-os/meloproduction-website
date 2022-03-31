@@ -13,7 +13,7 @@ export default function WhoWeAre() {
       className="w-full flex flex-col my-[2.5em] items-center"
     >
       <div className="img md:w-5/12 w-9/12">
-        <Image src={whoWeAreBg} layout="responsive" />
+        <Image alt="image of working people" src={whoWeAreBg} layout="responsive" />
       </div>
 
       <div className="flex flex-col md:w-5/12 w-9/12 mt-4 gap-5">

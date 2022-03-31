@@ -56,23 +56,16 @@ export default function WhyPeopleChooseUs() {
         </motion.p>
       </div>
 
-      <div
-        className="grid mx-auto mt-[20px] 
-        md:grid-cols-2
-        sm:grid-cols-1
-        gap-4 
-        lg:w-11/12 my-3"
-      >
-
+      <div className="grid mx-auto mt-[20px] md:grid-cols-2 sm:grid-cols-1 gap-4  lg:w-11/12 my-3">
         {whyUsCards.map((card, index) => (
           <motion.div
+            key={index}
             whileInView={{
               opacity: [0, 1],
               x: [-40, 0],
             }}
           >
             <WhyUsCard
-              key={index}
               title={card.title}
               description={card.description}
               number={card.number}

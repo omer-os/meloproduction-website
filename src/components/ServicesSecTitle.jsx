@@ -2,7 +2,7 @@ import React from "react";
 import useTranslation from "next-translate/useTranslation";
 import { motion } from "framer-motion";
 
-export function ServicesSecTitle() {
+export default function ServicesSecTitle() {
   const { t } = useTranslation("home");
 
   return (

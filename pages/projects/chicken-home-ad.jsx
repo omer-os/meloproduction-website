@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function chickenhomead() {
   return (
-    <div>chickenhomead</div>
+    <div className='my-[2em] text-2xl'>coming soon!</div>
   )
 }
