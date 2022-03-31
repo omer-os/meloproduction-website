@@ -21,7 +21,7 @@ import { motion } from "framer-motion";
 import Button from "@mui/material/Button";
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
-
+import GoUpButton from "../../src/components/GoUpButton";
 export default function DemoGraphicSet() {
   const [ShowImg, setShowImg] = useState(null);
   const { lang } = useTranslation();
@@ -57,7 +57,6 @@ export default function DemoGraphicSet() {
     },
   };
 
-
   return (
     <div className="sm:px-[4em] px-[2em]">
       <h1 className="mt-[3em] font-bold text-2xl text-center">
@@ -66,7 +65,6 @@ export default function DemoGraphicSet() {
       <h2 className="text-xl text-center max-w-[20em] mx-auto mt-[.5em]">
         {lang === "ar" ? text.ar.about : text.en.about}
       </h2>
-
       <div className="grid my-[2em] max-w-[700px] gap-[1em] relative mx-auto md:grid-cols-3 sm:grid-cols-2 ">
         {imgs.map((img, i) => (
           <motion.div
@@ -90,6 +88,9 @@ export default function DemoGraphicSet() {
 
         {ShowImg && (
           <motion.div
+            initial={{ opacity: 0, scale: 0.3 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.3 }}
             className="img-preview top-0 left-0 fixed z-[1000] w-screen h-screen bg-black/80 flex justify-center items-center"
             onClick={() => setShowImg(null)}
           >
@@ -113,7 +114,6 @@ export default function DemoGraphicSet() {
           </motion.div>
         )}
       </div>
-
       <div className="mx-auto mb-[2em] w-max">
         <Link href="/hire-us">
           <a>
@@ -126,7 +126,8 @@ export default function DemoGraphicSet() {
             </Button>
           </a>
         </Link>
-      </div>
+      </div>{" "}
+      <GoUpButton />
     </div>
   );
 }

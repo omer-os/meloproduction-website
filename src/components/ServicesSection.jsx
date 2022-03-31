@@ -70,11 +70,10 @@ function ServicesSection() {
       {services.map((service, index) => (
         <motion.div
           key={index}
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: .5 }}
-        >
+          whileInView={{
+            scale:[.5,1],
+            opacity: [0,1]
+          }}>
           <ServicesBox
             icon={service.Icon}
             title={service.Title}

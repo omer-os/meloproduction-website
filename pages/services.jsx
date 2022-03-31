@@ -2,6 +2,7 @@ import React from "react";
 import ServicesSection from "../src/components/ServicesSection";
 import useTranslation from "next-translate/useTranslation";
 import BlueButton from "../src/Buttons/BlueButton";
+import GoUpButton from "../src/components/GoUpButton";
 
 export default function Services() {
   const { t, lang } = useTranslation("services");
@@ -16,6 +17,8 @@ export default function Services() {
       <BlueButton text={t("btn")} link="/contact-us" />
 
       <ServicesSection />
+
+      <GoUpButton />
     </div>
   );
 }

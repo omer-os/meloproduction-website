@@ -11,18 +11,12 @@ import useInView from "react-cool-inview";
 import ServicesSection from "../src/components/ServicesSection";
 import dynamic from "next/dynamic";
 import Head from "next/head";
-
-
-
+import GoUpButton from "../src/components/GoUpButton";
 
 const BGrothSection = dynamic(() => import("../src/components/BGrothSection"));
 const OurWorkSection = dynamic(() =>
   import("../src/components/OurWorkSection")
 );
-
-
-
-
 
 export default function Index() {
   const { t, lang } = useTranslation("home");
@@ -53,6 +47,8 @@ export default function Index() {
       <OurClintes />
       <BGrothSection />
       <ContactUsSection />
+
+      <GoUpButton />
     </>
   );
 }
