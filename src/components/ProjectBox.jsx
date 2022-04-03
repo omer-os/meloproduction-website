@@ -7,7 +7,7 @@ export function ProjectBox({ img, text, btnText, link }) {
   return (
     <div className="flex flex-col items-center gap-2">
       <div className="w-full shadow-[rgba(0,0,0,0.24)_0px_3px_8px] rounded-lg overflow-hidden">
-        <Image src={img} layout="responsive" />
+        <Image alt="project box" src={img} layout="responsive" />
       </div>
 
       <div className="text-xl text-center capitalize font-bold">{text}</div>

@@ -1,9 +1,11 @@
 import React from "react";
-import bgImg from "../../public/imgs/bg-pcs-img.jpg";
 import Link from "next/link";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
 import RedButton from "../Buttons/RedButton";
+import {bgImg} from "../../public/ImageImports";
+
+
 export default function BGrothSection() {
   const { t, lang } = useTranslation("home");
   return (

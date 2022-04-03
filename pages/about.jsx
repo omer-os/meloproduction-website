@@ -1,8 +1,11 @@
 import React from "react";
-import whoWeAreBg from "../public/imgs/who-we-are-bg.jpg";
 import Image from "next/image";
 import BlueButton from "../src/Buttons/BlueButton";
 import useTranslation from "next-translate/useTranslation";
+import {
+  whoWeAreBg,
+} from "../public/ImageImports";
+
 
 export default function WhoWeAre() {
   const { t, lang } = useTranslation("about");

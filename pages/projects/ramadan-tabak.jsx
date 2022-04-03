@@ -18,7 +18,7 @@ export default function ramadantabak() {
         ></iframe>
       </div>
 
-      <div className="mx-auto w-max transition-all duration-150">
+      <div className="mx-auto w-max transition-all absolute top-[1.5em] left-[2em] duration-150">
         <GoBackBtn />
       </div>
     </div>

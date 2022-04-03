@@ -15,6 +15,7 @@ import proj12 from "./imgs/demo-graphic-set/proj12.jpg";
 import proj13 from "./imgs/demo-graphic-set/proj13.jpg";
 import proj14 from "./imgs/demo-graphic-set/proj14.jpg";
 import proj15 from "./imgs/demo-graphic-set/proj15.jpg";
+
 import ClearRoundedIcon from "@mui/icons-material/ClearRounded";
 import { IconButton } from "@mui/material";
 import { motion } from "framer-motion";
@@ -98,6 +99,7 @@ export default function DemoGraphicSet() {
           >
             <div className="img relative sm:w-[400px]  sm:h-[500px] xs:w-[300px] xs:h-[400px] w-[300px] h-[400px] ">
               <Image
+                alt="Image preview"
                 src={ShowImg}
                 layout="fill"
                 className="max-w-[700px] m-[1em]"
@@ -131,7 +133,7 @@ export default function DemoGraphicSet() {
       </div>
 
       <GoUpButton />
-      <div className="mx-auto w-max transition-all duration-150">
+      <div className="mx-auto w-max transition-all absolute top-[1.5em] left-[2em] duration-150">
         <GoBackBtn />
       </div>
     </div>

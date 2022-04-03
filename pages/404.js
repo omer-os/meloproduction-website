@@ -1,9 +1,12 @@
 import React from "react";
-import svg from "../public/imgs/under_construction_.svg";
 import Image from "next/image";
 import Button from "@mui/material/Button";
 import { useRouter } from "next/router";
 import useTranslation from "next-translate/useTranslation";
+
+import {
+  svg
+} from '../public/ImageImports.js';
 
 export default function ErrorPage() {
   const { t, lang } = useTranslation("common");

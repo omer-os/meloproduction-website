@@ -1,7 +1,39 @@
-import React from 'react'
+import { Skeleton } from "@mui/material";
+import React from "react";
+import GoBackBtn from "../../src/components/GoBackBtn";
+
+export const Frame = () => {
+  return (
+    <iframe
+      width="100%"
+      height="100%"
+      src="https://www.youtube.com/embed/IvGBSa1RfF8"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    ></iframe>
+  );
+};
 
 export default function baharatmendi() {
   return (
-    <div className='my-[2em] text-2xl'>coming soon!</div>
-  )
+    <div>
+      <div className="text-2xl text-center font-bold my-[1em] mt-[4em]">
+        Tabakh Mandi Spice – بهارات مندي اللحم
+      </div>
+
+      <div className="mx-auto px-[1em] mb-[2em] max-w-[30em] sm:h-[30em] h-[25em] ">
+        {
+          <Frame /> ? (
+            <Frame />
+          ) : (
+            <Skeleton variant="rect" width="100%" height="100%" />
+          )
+        }
+      </div>
+
+      <div className="mx-auto w-max transition-all absolute top-[1.5em] left-[2em] duration-150">
+        <GoBackBtn />
+      </div>
+    </div>
+  );
 }

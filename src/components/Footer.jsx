@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import logo from "../../public/imgs/logo.png";
 import Link from "next/link";
 import setLanguage from "next-translate/setLanguage";
 import useTranslation from "next-translate/useTranslation";
+import {
+  logo
+} from '../../public/ImageImports';
 
 export default function Footer() {
   const { t, lang } = useTranslation("common");
@@ -100,7 +102,7 @@ export default function Footer() {
         </div>
 
         <div className="hire-us">
-          <Link passHref href="/hire-us">
+          <Link passHref href="/contact-us">
             <button className="text-black bg-white py-2 px-5 rounded-md font-bold">
               {t("footer.btn")}
             </button>

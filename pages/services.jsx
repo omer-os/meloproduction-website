@@ -1,12 +1,10 @@
-import React from "react";
-import ServicesSection from "../src/components/ServicesSection";
 import useTranslation from "next-translate/useTranslation";
-import BlueButton from "../src/Buttons/BlueButton";
-import GoUpButton from "../src/components/GoUpButton";
+import { ServicesSection, BlueButton, GoUpButton } from "../src/ComponentFiles";
+import { Button } from "@mui/material";
+import Link from "next/link";
 
 export default function Services() {
   const { t, lang } = useTranslation("services");
-
   return (
     <div className="my-4 flex flex-col items-center">
       <div className="title text-2xl font-bold text-center">{t("title")}</div>
@@ -14,7 +12,12 @@ export default function Services() {
         {t("description")}
       </div>
       <br />
-      <BlueButton text={t("btn")} link="/contact-us" />
+
+      <Link href="/contact-us">
+        <Button className=" bg-blue-600" variant="contained" color="primary">
+          {t("btn")}
+        </Button>
+      </Link>
 
       <ServicesSection />
 
