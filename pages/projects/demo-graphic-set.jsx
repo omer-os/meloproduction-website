@@ -19,8 +19,8 @@ import {
   proj15,
 } from "./imgs/demo-graphic-set/ImageImports";
 
-import {ClearRoundedIcon} from "@mui/icons-material/ClearRounded";
-import { IconButton } from "@mui/material";
+// import {ClearRoundedIcon} from "@mui/icons-material/ClearRounded";
+// import { IconButton } from "@mui/material";
 import { motion } from "framer-motion";
 import Button from "@mui/material/Button";
 import Link from "next/link";
@@ -91,7 +91,10 @@ export default function DemoGraphicSet() {
           </motion.div>
         ))}
 
-        {ShowImg && (
+
+        {/* image zoom in fix later */}
+
+        {/* {ShowImg && (
           <motion.div
             initial={{ opacity: 0, scale: 0.3 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -118,7 +121,7 @@ export default function DemoGraphicSet() {
               </div>
             </div>
           </motion.div>
-        )}
+        )} */}
       </div>
       <div className="mx-auto mb-[2em] w-max">
         <Link href="/hire-us">
