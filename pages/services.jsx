@@ -13,7 +13,7 @@ export default function Services() {
       </div>
       <br />
 
-      <Link href="/contact-us">
+      <Link passHref  href="/contact-us">
         <Button className=" bg-blue-600" variant="contained" color="primary">
           {t("btn")}
         </Button>

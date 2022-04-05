@@ -43,6 +43,7 @@ export default function ContactUsSection() {
       ].map((item) => {
         return (
           <a
+            key={item.href}
             href={item.href}
             className="flex w-max mx-auto hover:underline cursor-pointer justify-center gap-2 text-xl"
           >
