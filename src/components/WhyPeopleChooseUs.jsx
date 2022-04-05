@@ -1,8 +1,7 @@
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
 import { motion } from "framer-motion";
-import { WhyUsCard } from "./WhyUsCard";
-
+import {WhyUsCard} from '../ComponentFiles'
 export default function WhyPeopleChooseUs() {
   const { t, lang } = useTranslation("home");
   const whyUsCards = [
