@@ -1,5 +1,5 @@
 import React from "react";
-export function WhyUsCard({ title, description, number }) {
+export default function WhyUsCard({ title, description, number }) {
   return (
     <div className="reason bg-gray-100 sm:sm:px-5 gap-3 items-center flex">
       <div className="text-[120px] font-extrabold text-gray-400">{number}</div>

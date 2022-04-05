@@ -17,7 +17,7 @@ import {
   proj13,
   proj14,
   proj15,
-} from "./imgs/demo-graphic-set/ImageImports";
+} from "../../public/imgs/demo-graphic-set/ImageImports";
 
 // import {ClearRoundedIcon} from "@mui/icons-material/ClearRounded";
 // import { IconButton } from "@mui/material";
@@ -127,7 +127,7 @@ export default function DemoGraphicSet() {
         
       </div>
       <div className="mx-auto mb-[2em] w-max">
-        <Link href="/hire-us">
+        <Link href="/contact-us">
           <a>
             <Button
               variant="contained"
