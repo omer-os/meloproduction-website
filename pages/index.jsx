@@ -25,7 +25,7 @@ export default function Index() {
       <OurClintes />
       <BGrothSection />
       <ContactUsSection />
-      <GoUpButton />
+      {/* <GoUpButton /> */}
     </>
   );
 }

@@ -1,6 +1,5 @@
 import { Skeleton } from "@mui/material";
 import React from "react";
-import GoBackBtn from "../../src/components/GoBackBtn";
 
 export const Frame = () => {
   return (
@@ -31,9 +30,7 @@ export default function baharatmendi() {
         }
       </div>
 
-      <div className="mx-auto w-max transition-all absolute top-[1.5em] left-[2em] duration-150">
-        <GoBackBtn />
-      </div>
+
     </div>
   );
 }

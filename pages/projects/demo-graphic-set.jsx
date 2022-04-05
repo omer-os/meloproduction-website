@@ -1,29 +1,31 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import proj1 from "./imgs/demo-graphic-set/proj1.jpg";
-import proj2 from "./imgs/demo-graphic-set/proj2.jpg";
-import proj3 from "./imgs/demo-graphic-set/proj3.jpg";
-import proj4 from "./imgs/demo-graphic-set/proj4.jpg";
-import proj5 from "./imgs/demo-graphic-set/proj5.jpg";
-import proj6 from "./imgs/demo-graphic-set/proj6.jpg";
-import proj7 from "./imgs/demo-graphic-set/proj7.jpg";
-import proj8 from "./imgs/demo-graphic-set/proj8.jpg";
-import proj9 from "./imgs/demo-graphic-set/proj9.jpg";
-import proj10 from "./imgs/demo-graphic-set/proj10.jpg";
-import proj11 from "./imgs/demo-graphic-set/proj11.jpg";
-import proj12 from "./imgs/demo-graphic-set/proj12.jpg";
-import proj13 from "./imgs/demo-graphic-set/proj13.jpg";
-import proj14 from "./imgs/demo-graphic-set/proj14.jpg";
-import proj15 from "./imgs/demo-graphic-set/proj15.jpg";
 
-import ClearRoundedIcon from "@mui/icons-material/ClearRounded";
+import {
+  proj1,
+  proj2,
+  proj3,
+  proj4,
+  proj5,
+  proj6,
+  proj7,
+  proj8,
+  proj9,
+  proj10,
+  proj11,
+  proj12,
+  proj13,
+  proj14,
+  proj15,
+} from "./imgs/demo-graphic-set/ImageImports";
+
+import {ClearRoundedIcon} from "@mui/icons-material/ClearRounded";
 import { IconButton } from "@mui/material";
 import { motion } from "framer-motion";
 import Button from "@mui/material/Button";
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
-import GoUpButton from "../../src/components/GoUpButton";
-import GoBackBtn from "../../src/components/GoBackBtn";
+
 export default function DemoGraphicSet() {
   const [ShowImg, setShowImg] = useState(null);
   const { lang } = useTranslation();
@@ -130,11 +132,6 @@ export default function DemoGraphicSet() {
             </Button>
           </a>
         </Link>
-      </div>
-
-      <GoUpButton />
-      <div className="mx-auto w-max transition-all absolute top-[1.5em] left-[2em] duration-150">
-        <GoBackBtn />
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ export default function Services() {
 
       <ServicesSection />
 
-      <GoUpButton />
+      {/* <GoUpButton /> */}
     </div>
   );
 }

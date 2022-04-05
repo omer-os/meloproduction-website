@@ -1,5 +1,4 @@
 import React from "react";
-import GoBackBtn from "../../src/components/GoBackBtn";
 
 export default function enshtiencafe() {
   return (
@@ -18,9 +17,7 @@ export default function enshtiencafe() {
         ></iframe>
       </div>
 
-      <div className="mx-auto w-max transition-all absolute top-[1.5em] left-[2em] duration-150">
-        <GoBackBtn />
-      </div>
+ 
     </div>
   );
 }

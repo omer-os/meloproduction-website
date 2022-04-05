@@ -1,17 +1,20 @@
-import React from "react";
-import DemoGraphicSet from "../../public/imgs/projects/Demo-Graphic-Set.jpg";
-import RamadanTabak from "../../public/imgs/projects/ramadan-tabak.jpg";
-import BaharatMendi from "../../public/imgs/projects/baharat-mendi.jpg";
-import TabakGrillingBag from "../../public/imgs/projects/tabak-grilling-bag.jpg";
-import ChickenHomeAd from "../../public/imgs/projects/chicken-home-ad.jpg";
-import TabakTeaAd from "../../public/imgs/projects/tabak-tea-ad.jpg";
-import EnishtainCafe from "../../public/imgs/projects/enishtain-cafe.jpg";
-import RajiOrangeAd from "../../public/imgs/projects/raji-orange-ad.jpg";
-import EnishtainCafeKirkuk from "../../public/imgs/projects/enishtain-cafe-kirkuk.jpg";
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
+
+import {
+  DemoGraphicSet,
+  RamadanTabak,
+  BaharatMendi,
+  TabakGrillingBag,
+  ChickenHomeAd,
+  TabakTeaAd,
+  EnishtainCafe,
+  RajiOrangeAd,
+  EnishtainCafeKirkuk,
+} from "../../public/ImageImports";
+
 import WorkBox from "./WorkBox";
-import RedButton from "../Buttons/RedButton";
+import { Button } from "@mui/material";
 
 export default function OurWorkSection() {
   const { t, lang } = useTranslation("home");
@@ -89,7 +92,9 @@ export default function OurWorkSection() {
 
       <Link passHref href="/projects">
         <div className="w-max mx-auto">
-          <RedButton text={t("our-work.btn")} />
+          <Button className="bg-red-600 text-white hover:bg-red-700">
+            {t("our-work.btn")}
+          </Button>
         </div>
       </Link>
     </div>
