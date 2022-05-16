@@ -25,7 +25,7 @@ export default function Layout({ children }) {
       </Head>
       <NavBar />
 
-      <AnimatePresence initial={false} exitBeforeEnter>
+      <AnimatePresence onExitComplete={() => window.scrollTo(0, 0)} initial={false} exitBeforeEnter>
         <motion.div
           key={router.route}
           initial="initial"
