@@ -17,7 +17,7 @@ export default function BGrothSection() {
         {t("Business-Growth-Section.description")}
       </div>
 
-      <Link passHref href="/services">
+      <Link passHref scroll={false} href="/services">
         <a className="mx-auto z-20 mt-4 w-max">
           <Button className="bg-white text-red-600 hover:bg-gray-100">
             {t("Business-Growth-Section.btn")}
